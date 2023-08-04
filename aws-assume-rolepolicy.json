@@ -1,0 +1,46 @@
+Following Policy Need To Be Configured To Jenkins Role: {
+    {
+        "Version": "2012-10-17",
+        "Statement": {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": [
+            "arn:aws:iam::591622755975:role/Devops30JenkinsAssumeRole",
+            "arn:aws:iam::209949574592:role/Devops30-Jenkins-AssumeRole"
+            ]
+        }
+    }
+}
+
+
+Following Policy Need To Be Configured To Role Prod & Dev Accounts: {
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Principal": {
+                    "AWS": "arn:aws:iam::576259423856:root"
+                },
+                "Action": "sts:AssumeRole",
+                "Condition": {}
+            }
+        ]
+    }
+}
+
+Following Policy Need To Be Configured To Role Prod & Dev Accounts: {
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Principal": {
+                    "AWS": "arn:aws:iam::576259423856:root"
+                },
+                "Action": "sts:AssumeRole",
+                "Condition": {}
+            }
+        ]
+    }
+}
